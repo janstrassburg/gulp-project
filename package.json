@@ -1,8 +1,11 @@
 {
-	"devDependencies": {
+	"dependencies": {
 		"gulp": "3.*",
 		"gulp-concat": "2.*",
 		"gulp-uglify": "1.*",
-		"gulp-html-js-template": "*"
+		"gulp-minify-html": "1.*",
+		"gulp-html-compile": "1.*",
+		"gulp-minify-css": "1.*",
+		"gulp-uncache": "^0.3.6"
 	}
 }
