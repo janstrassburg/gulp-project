@@ -14,7 +14,12 @@ var paths = {
 		'dist/templates.js',
 		'src/js/**/*.js'
 	],
-	styles: 'src/css/**/*.css'
+	styles: [
+		'src/css/**/*.css'
+	],
+	resources: [
+		'src/resources/**/*.jpg'
+	]
 };
 
 gulp.task('templates', function () {
@@ -47,6 +52,10 @@ gulp.task('index', function () {
 	return gulp.src('src/index.html')
 		.pipe(uncache())
 		.pipe(gulp.dest('dist'));
+});
+
+gulp.task('resources', function () {
+	return gulp.src(paths.resources).pipe(gulp.dest('dist'));
 });
 
 gulp.task('watch', function () {
